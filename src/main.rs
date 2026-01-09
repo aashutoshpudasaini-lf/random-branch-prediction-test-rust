@@ -8,7 +8,7 @@ fn main() {
     while counter <= 1_00_000 {
         let random_number: i64 = rand::random();
 
-        if random_number.abs() > i64::MAX / 2 {
+        if random_number.abs() >= i64::MAX / 2 {
             greater_count += 1;
             greater_branch(random_number);
         } else {
