@@ -10,10 +10,10 @@ fn main() {
 
         if random_number.abs() >= i64::MAX / 2 {
             greater_count += 1;
-            greater_branch(random_number);
+            // greater_branch(random_number);
         } else {
             lesser_count += 1;
-            lesser_branch(random_number);
+            // lesser_branch(random_number);
         }
         counter += 1
     }
